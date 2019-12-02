@@ -1,12 +1,12 @@
-# angular2-draggable
+# ngx-draggable-resize
 
 <!-- Badges section here. -->
-[![npm](https://img.shields.io/npm/v/angular2-draggable.svg)][npm-badge-url]
-[![npm](https://img.shields.io/npm/dm/angular2-draggable.svg)][npm-badge-url]
-[![Build Status](https://travis-ci.org/xieziyu/angular2-draggable.svg?branch=master)][ci-url]
+[![npm](https://img.shields.io/npm/v/ngx-draggable-resize.svg)][npm-badge-url]
+[![npm](https://img.shields.io/npm/dm/ngx-draggable-resize.svg)][npm-badge-url]
+[![Build Status](https://travis-ci.org/xieziyu/ngx-draggable-resize.svg?branch=master)][ci-url]
 
-+ [Online Demo](https://xieziyu.github.io/angular2-draggable)
-+ [Online Docs](https://xieziyu.github.io/angular2-draggable/api-doc)
++ [Online Demo](https://xieziyu.github.io/ngx-draggable-resize)
++ [Online Docs](https://xieziyu.github.io/ngx-draggable-resize/api-doc)
 
 ## Table of contents 
 1. [Getting Started](#getting-started)
@@ -18,7 +18,7 @@
 6. [Events](#events)
 
 # Getting Started
-angular2-draggable has angular directives that make the DOM element draggable and resizable.
+ngx-draggable-resize has angular directives that make the DOM element draggable and resizable.
 + `ngDraggable`
     + v2.x requires Angular >= 6
     + v1.5.0 requires Angular >= 4 && < 6
@@ -33,11 +33,11 @@ angular2-draggable has angular directives that make the DOM element draggable an
 
 + 2019.06.10: 2.3.2:
   + **ngResizable**
-    + Fix [issue #164](https://github.com/xieziyu/angular2-draggable/issues/164): Resize doesn't work on Windows10 IE11 ([PR #171](https://github.com/xieziyu/angular2-draggable/pull/171) by [shumih](https://github.com/shumih]), [PR #174](https://github.com/xieziyu/angular2-draggable/pull/174) by [LiorSaadon](https://github.com/LiorSaadon]))
+    + Fix [issue #164](https://github.com/xieziyu/ngx-draggable-resize/issues/164): Resize doesn't work on Windows10 IE11 ([PR #171](https://github.com/xieziyu/ngx-draggable-resize/pull/171) by [shumih](https://github.com/shumih]), [PR #174](https://github.com/xieziyu/ngx-draggable-resize/pull/174) by [LiorSaadon](https://github.com/LiorSaadon]))
 
 + 2019.05.14: 2.3.0:
   + **ngResizable**:
-    + Fix [issue #157](https://github.com/xieziyu/angular2-draggable/issues/159): Problem resizing with containment
+    + Fix [issue #157](https://github.com/xieziyu/ngx-draggable-resize/issues/159): Problem resizing with containment
     + Add `direction` property in `IResizeEvent`. 
 
   + **ngDraggable**: 
@@ -45,15 +45,15 @@ angular2-draggable has angular directives that make the DOM element draggable an
 
 # Installation
 ```
-npm install angular2-draggable --save
+npm install ngx-draggable-resize --save
 ```
 
 # Draggable
-Please refer to the [demo](https://xieziyu.github.io/angular2-draggable) page.
+Please refer to the [demo](https://xieziyu.github.io/ngx-draggable-resize) page.
 
 1. Firstly, import `AngularDraggableModule` in your app module (or any other proper angular module):
     ```typescript
-    import { AngularDraggableModule } from 'angular2-draggable';
+    import { AngularDraggableModule } from 'ngx-draggable-resize';
 
     @NgModule({
       imports: [
@@ -84,14 +84,14 @@ Please refer to the [demo](https://xieziyu.github.io/angular2-draggable) page.
       ```
 
 # Resizable
-Please refer to the [demo](https://xieziyu.github.io/angular2-draggable/#/resizable/default) page.
+Please refer to the [demo](https://xieziyu.github.io/ngx-draggable-resize/#/resizable/default) page.
 
 Besides of importing `AngularDraggableModule`, you need to import `resizable.min.css` in your project. If you use `angular-cli`, you can add this in `angular.json`:
 
 ```diff
 "styles": [
     ...
-+   "node_modules/angular2-draggable/css/resizable.min.css"
++   "node_modules/ngx-draggable-resize/css/resizable.min.css"
 ]
 ```
 
@@ -122,9 +122,9 @@ Well you can use both directives concurrently if you wish:
     | zIndexMoving | string | null | Use it to set z-index property when element is moving |
     | bounds | HTMLElemnt | null | Use it to set the boundary |
     | inBounds | boolean | `false` | Use it make element stay in the bounds |
-    | outOfBounds | `{ top: boolean; bottom: boolean; right: boolean; left: boolean }` | `false` | Set it to allow element get out of bounds from the direction. Refer to [demo](https://xieziyu.github.io/angular2-draggable/#/usage/boundary) |
+    | outOfBounds | `{ top: boolean; bottom: boolean; right: boolean; left: boolean }` | `false` | Set it to allow element get out of bounds from the direction. Refer to [demo](https://xieziyu.github.io/ngx-draggable-resize/#/usage/boundary) |
     | position | `{ x: number, y: number }` | `{ x:0, y:0 }` | Use it to set position offset |
-    | gridSize | number | 1 | Use it for snapping to grid. Refer to [demo](https://xieziyu.github.io/angular2-draggable/#/advance/snap-grid) |
+    | gridSize | number | 1 | Use it for snapping to grid. Refer to [demo](https://xieziyu.github.io/ngx-draggable-resize/#/advance/snap-grid) |
     | preventDefaultEvent | boolean | `false` | Whether to prevent default mouse event |
     | scale | number | 1 | Set it when parent element has CSS transform scale |
     | lockAxis | `'x' \| 'y'` | null | Restrict dragging to a specific axis by locking another one |
@@ -233,5 +233,5 @@ yarn demo
 The demo page server is listening to: http://localhost:4203
 
 
-[npm-badge-url]: https://www.npmjs.com/package/angular2-draggable
-[ci-url]: https://travis-ci.org/xieziyu/angular2-draggable
+[npm-badge-url]: https://www.npmjs.com/package/ngx-draggable-resize
+[ci-url]: https://travis-ci.org/xieziyu/ngx-draggable-resize

@@ -1,7 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/angular2-draggable",
-  "deleteDestPath": false,
+  "dest": "../../dist/ngx-draggable-resize",
   "lib": {
     "entryFile": "src/public_api.ts"
   }

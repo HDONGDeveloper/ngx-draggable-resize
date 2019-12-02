@@ -1,5 +1,5 @@
 /*
- * Public API Surface of angular2-draggable
+ * Public API Surface of ngx-draggable-resize
  */
 
 export * from './lib/angular-draggable.directive';

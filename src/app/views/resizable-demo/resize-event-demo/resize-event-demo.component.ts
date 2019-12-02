@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularResizableDirective } from 'angular2-draggable';
+import { AngularResizableDirective } from 'ngx-draggable-resize';
 
 declare const require: any;
 

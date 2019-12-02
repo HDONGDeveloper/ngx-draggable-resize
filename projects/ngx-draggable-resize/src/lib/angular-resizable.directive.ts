@@ -46,7 +46,7 @@ export class AngularResizableDirective implements OnInit, OnChanges, OnDestroy, 
 
   /**
    * Bugfix: iFrames, and context unrelated elements block all events, and are unusable
-   * https://github.com/xieziyu/angular2-draggable/issues/84
+   * https://github.com/xieziyu/ngx-draggable-resize/issues/84
    */
   private _helperBlock: HelperBlock = null;
 
@@ -513,7 +513,7 @@ export class AngularResizableDirective implements OnInit, OnChanges, OnDestroy, 
 
       /**
        * Fix Issue: Additional check for aspect ratio
-       * https://github.com/xieziyu/angular2-draggable/issues/132
+       * https://github.com/xieziyu/ngx-draggable-resize/issues/132
        */
       if (this._aspectRatio) {
         this._adjusted = false;

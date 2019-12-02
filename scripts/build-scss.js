@@ -1,8 +1,8 @@
 const sass = require('node-sass');
 const fs = require('fs');
 
-const SCSS_FILE = './projects/angular2-draggable/src/scss/resizable.scss';
-const OUTPUT_PATH = './dist/angular2-draggable/css';
+const SCSS_FILE = './projects/ngx-draggable-resize/src/scss/resizable.scss';
+const OUTPUT_PATH = './dist/ngx-draggable-resize/css';
 
 const result = sass.renderSync({
   file: SCSS_FILE,

@@ -1,5 +1,5 @@
 {
-  "name": "angular2-draggable-demo",
+  "name": "ngx-draggable-resize-demo",
   "version": "1.2.0",
   "scripts": {
     "ng": "ng",
@@ -8,16 +8,16 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:lib": "ng build angular2-draggable",
+    "build:lib": "ng build ngx-draggable-resize",
     "build:css": "node scripts/build-scss.js",
-    "build:prod": "ng build angular2-draggable --prod",
-    "update:md": "cpr README.md dist/angular2-draggable/README.md -o",
+    "build:prod": "ng build ngx-draggable-resize --prod",
+    "update:md": "cpr README.md dist/ngx-draggable-resize/README.md -o",
     "dist": "run-s build:prod build:css update:md",
     "release": "run-s build:prod build:css update:md build:doc",
     "demo": "run-s build:lib build:css start",
     "build:doc": "run-s build compodoc",
-    "compodoc": "compodoc -p projects/angular2-draggable/tsconfig.lib.json -d dist/docs/api-doc --theme stripe",
-    "serve:doc": "compodoc -p projects/angular2-draggable/tsconfig.lib.json -s"
+    "compodoc": "compodoc -p projects/ngx-draggable-resize/tsconfig.lib.json -d dist/docs/api-doc --theme stripe",
+    "serve:doc": "compodoc -p projects/ngx-draggable-resize/tsconfig.lib.json -s"
   },
   "private": true,
   "dependencies": {

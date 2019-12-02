@@ -17,11 +17,11 @@
       "dom"
     ],
     "paths": {
-      "angular2-draggable": [
-        "dist/angular2-draggable"
+      "ngx-draggable-resize": [
+        "dist/ngx-draggable-resize"
       ],
-      "angular2-draggable/*": [
-        "dist/angular2-draggable/*"
+      "ngx-draggable-resize/*": [
+        "dist/ngx-draggable-resize/*"
       ]
     }
   }
